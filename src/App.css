@@ -1,3 +1,10 @@
 .App {
   text-align: center;
 }
+
+.heading {
+  background-color: brown;
+  color: cornsilk;
+  margin: 20px;
+  padding: 10px;
+}
