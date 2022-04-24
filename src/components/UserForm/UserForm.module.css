@@ -1,0 +1,18 @@
+.name {
+  margin: 10px 0px;
+}
+.successMsg {
+  color: green;
+  font-weight: bold;
+  margin: 20px 0px;
+}
+.errorMsg {
+  color: red;
+  font-weight: bold;
+  margin: 20px 0px;
+}
+.loading {
+  color: yellow;
+  font-weight: bold;
+  margin: 20px 0px;
+}
