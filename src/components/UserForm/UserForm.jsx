@@ -1,4 +1,5 @@
 import { useState } from "react";
+import axios from "axios";
 import styles from "./UserForm.module.css";
 const UserForm = () => {
   const [name, setName] = useState("");
@@ -25,7 +26,8 @@ const UserForm = () => {
     setSucessMsg("");
     setErrorMsg("");
     setIsLoading(true);
-    fetch("https://reqres.in/api/users", apiConfig)
+    axios
+      .get("https://reqres.in/api/users", apiConfig)
       .then((res) =>
         res.status === 201 ? res.json() : new Error("User Creation Fail")
       )
